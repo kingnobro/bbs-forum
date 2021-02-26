@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>邮件详情</title>
+
+    <link rel="stylesheet" href="/static/css/newstyle.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="login">
+        <h1 class="login-heading">
+            <strong>Detail.</strong></h1>
+        <form method="post" action="{{ url_for('index.login') }}">
+            <input type="text" name="username" value="sender_id: {{ message.sender_id }}" required="required"
+                   disabled="disabled" class="input-txt"/>
+            <input type="text" name="username" value="receiver_id: {{ message.receiver_id }}" required="required"
+                   disabled="disabled" class="input-txt"/>
+            <input type="text" name="username" value="content: {{ message.content }}" required="required" disabled="disabled"
+                   class="input-txt"/>
+
+        </form>
+
+        <div class="create_account">
+            <a href="/message" class="lnk">
+                <h2>返回</h2>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

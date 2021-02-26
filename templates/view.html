@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>修改密码</title>
+
+    <link rel="stylesheet" href="/static/css/newstyle.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="login">
+        <h1 class="login-heading">
+            <strong>Please enter new passoword.</strong></h1>
+        <form method="post" action="{{ url_for('reset.update') }}">
+            <input type="text" name="new_pass" placeholder="New password" required="required" class="input-txt"/>
+            <div class="login-footer">
+                <button type="submit" class="btn btn--right">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="/static/css/newstyle.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="login">
+        <h1 class="login-heading">
+            <strong>Please enter your email.</strong></h1>
+        <form method="post" action="{{ url_for('reset.send') }}">
+            <input type="text" name="email" placeholder="Email" required="required" class="input-txt"/>
+            <div class="login-footer">
+                <button type="submit" class="btn btn--right">Send Email</button>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>
